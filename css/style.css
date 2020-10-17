@@ -1,0 +1,94 @@
+@font-face {
+    font-family: 'Proxima-Nova-Lt';
+    src: url('/fonts/ProximaNova-Light.eot');
+    src: local('Proxima Nova Light'), local('ProximaNova-Light'),
+        url('/fonts/ProximaNova-Light.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/ProximaNova-Light.woff2') format('woff2'),
+        url('/fonts/ProximaNova-Light.woff') format('woff'),
+        url('/fonts/ProximaNova-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Proxima-Nova-Rg';
+    src: url('ProximaNova-Regular.eot');
+    src: local('Proxima Nova Regular'), local('ProximaNova-Regular'),
+        url('ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+        url('ProximaNova-Regular.woff2') format('woff2'),
+        url('ProximaNova-Regular.woff') format('woff'),
+        url('ProximaNova-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+margin: 0;
+padding: 0;
+font-size: 14px;
+line-height: 20px;
+}
+
+.wrap {
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: repeating-linear-gradient(to right, #ffe8e8 0 60px, #ffffff 60px 80px);
+    max-width: 1100px;
+    margin: 0 auto;
+    height: 290px;
+}
+
+.item {
+    padding: 15px;
+    max-width: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+svg {
+    border-radius: 50%;
+    background-color: #1275b9;
+    border: solid 2px #1275b9;
+    transition: all ease 0.4s;
+    opacity: 0.8;
+}
+
+.svg-body {
+    fill: white;
+    transition: all ease-in 0.4s;
+}
+
+svg:hover .svg-body {
+    fill: #1275b9;
+}
+
+svg:hover {
+ background-color: transparent;
+}
+
+.title {
+    padding: 15px 0 0 0;
+}
+
+.title span {
+    font-family: 'Proxima-Nova-Rg';
+    text-transform: uppercase;
+}
+
+.text p {
+    font-family: 'Proxima-Nova-Lt';
+}
